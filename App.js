@@ -1,7 +1,7 @@
 
 import { View } from 'react-native';
 import React from 'react';
-import MenuPage from './MenuApp/MenuPage'
+import MenuPage from './MenuPage'
 
 export default class App extends React.Component {
     constructor(props) {
