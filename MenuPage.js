@@ -9,32 +9,32 @@ export default class Task2 extends React.Component {
         this.state = {
           arr :[
               {
-              image:require("../image/f.jpeg"),
+              image:require("./images/f.jpeg"),
               name :"Partyvigar",
               price : "---- 100 $ ----"
               },
               {
-                image:require("../image/o.jpeg"),
+                image:require("./images/o.jpeg"),
                 name :"Kryddmarinerade",
                 price : "---- 350 $ ----"
               },
               {
-                image:require("../image/uu.jpeg"),
+                image:require("./images/uu.jpeg"),
                 name :"Kycklinglar",
                 price : "---- 200 $ ----"
               },
               {
-                image:require("../image/kkk.jpeg"),
+                image:require("./images/kkk.jpeg"),
                 name :"Partyvigar",
                 price : "---- 150 $ ----"
               },
               {
-                image:require("../image/food.jpeg"),
+                image:require("./images/food.jpeg"),
                 name :"pucklinglar",
                 price : "---- 450 $ ----"
               },
               {
-                image:require("../image/ppp.jpeg"),
+                image:require("./images/ppp.jpeg"),
                 name :"hotklinglar",
                 price : "---- 420 $ ----"
               }
@@ -47,7 +47,7 @@ export default class Task2 extends React.Component {
 
                 <View style={{ backgroundColor: '#ffffff', height: height*1 }} >
                     
-                    <ImageBackground source={require("../image/oo.jpeg")}
+                    <ImageBackground source={require("./images/oo.jpeg")}
                         style={{ height: height*0.185, width: '100%' }}
                         resizeMode={'cover'}
 
@@ -102,67 +102,6 @@ export default class Task2 extends React.Component {
 
                                 ))}
 
-
-
-
-
-
-
-
-                                {/* <View style={{ height: 150, width: 150, backgroundColor: "#f4f1de", marginLeft: 10 }}>
-                                    <Image
-                                        source={require("../image/f.jpeg")}
-                                        style={{ height: 100, width: 140, alignSelf: 'center', marginTop: 5 }}
-                                    />
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: 2, textAlign: 'center' }}>Partyvigar</Text>
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', textAlign: 'center' }}>---- 100 $ ----</Text>
-
-                                </View>
-                                <View style={{ height: 150, width: 150, backgroundColor: "#f4f1de", marginLeft: 10, }}>
-                                    <Image
-                                        source={require("../image/o.jpeg")}
-                                        style={{ height: 100, width: 140, alignSelf: 'center', marginTop: 5 }}
-                                    />
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: 2, textAlign: 'center' }}>Kryddmarinerade</Text>
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', textAlign: 'center' }}>---- 350 $ ----</Text>
-
-                                </View>
-                                <View style={{ height: 150, width: 150, backgroundColor: "#f4f1de", marginLeft: 10, marginTop: 10 }}>
-                                    <Image
-                                        source={require("../image/uu.jpeg")}
-                                        style={{ height: 100, width: 140, alignSelf: 'center', marginTop: 5 }}
-                                    />
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: 2, textAlign: 'center' }}>Kycklinglar</Text>
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', textAlign: 'center' }}>---- 200 $ ----</Text>
-
-                                </View>
-                                <View style={{ height: 150, width: 150, backgroundColor: "#f4f1de", marginLeft: 10, marginTop: 10 }}>
-                                    <Image
-                                        source={require("../image/kkk.jpeg")}
-                                        style={{ height: 100, width: 140, alignSelf: 'center', marginTop: 5 }}
-                                    />
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: 2, textAlign: 'center' }}>Kycklinglar</Text>
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', textAlign: 'center' }}>---- 150 $ ----</Text>
-
-                                </View>
-                                <View style={{ height: 150, width: 150, backgroundColor: "#f4f1de", marginLeft: 10, marginTop: 10 }}>
-                                    <Image
-                                        source={require("../image/food.jpeg")}
-                                        style={{ height: 100, width: 140, alignSelf: 'center', marginTop: 5 }}
-                                    />
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: 2, textAlign: 'center' }}>pucklinglar</Text>
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', textAlign: 'center' }}>---- 430 $ ----</Text>
-
-                                </View>
-                                <View style={{ height: 150, width: 150, backgroundColor: "#f4f1de", marginLeft: 10, marginTop: 10 }}>
-                                    <Image
-                                        source={require("../image/ppp.jpeg")}
-                                        style={{ height: 100, width: 140, alignSelf: 'center', marginTop: 5 }}
-                                    />
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', marginTop: 2, textAlign: 'center' }}>hotklinglar</Text>
-                                    <Text style={{ fontSize: 12, fontWeight: 'bold', textAlign: 'center' }}>---- 3100 $ ----</Text> */}
-
-                                {/* </View> */}
                             </View>
 
                         </ScrollView>
@@ -183,43 +122,3 @@ export default class Task2 extends React.Component {
 
 
 
-{/* <View style={{ flex: 1, justifyContent: "center", alignSelf: "center" }}>
-<View style={{ flexDirection: 'column' }}>
-
-    <TouchableOpacity
-        onPress={() => {
-            increment5()
-        }}
-        style={{ height: 100, margin: 20, width: 100, backgroundColor: "red", borderRadius: 20 }}
-    >
-        <Text style={{ fontSize: 30, textAlign: "center" }}>
-            +5
-        </Text>
-    </TouchableOpacity>
-
-    <TouchableOpacity
-        onPress={() => {
-            setCount(counnt - 1)
-        }}
-        style={{ height: 100, margin: 20, width: 100, backgroundColor: "red", borderRadius: 20 }}
-    >
-        <Text style={{ fontSize: 30, textAlign: "center" }}>
-            --
-        </Text>
-    </TouchableOpacity>
-
-    <Text style={{ fontSize: 30, margin: 15 }}>
-        count :  {counnt}
-    </Text>
-    <TouchableOpacity
-        onPress={() => {
-            setCount(initialCount)
-        }}
-        style={{ height: 100, margin: 20, width: 100, backgroundColor: "red", borderRadius: 20 }}
-    >
-        <Text style={{ fontSize: 30, textAlign: "center" }}>
-            Recet
-        </Text>
-    </TouchableOpacity>
-</View>
-</View> */}
